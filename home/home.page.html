@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Actividad3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Actividad3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-text> 
+        La presente aplicación tiene dos botones, uno para ir hacía una nueva página donde
+        podrá tomar una fotografía y verla, además de saber las coordenadas desde donde tomó la fotografía. 
+        También podrá navegar en la otra página disponible en la cuál se listarán una listado de opciones de
+        la cámara que están en proceso de construcción. Espero que les guste.
+      </ion-text>
+    </ion-card>
+  </div>
+  <div id="container2">
+    <ion-button color="primary" (click)="fotografia()">Fotografía</ion-button>
+    <ion-button color="secondary" (click)="listado()">Listado</ion-button>
+  </div>
+</ion-content>

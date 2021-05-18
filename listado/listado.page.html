@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" (click)="volverAtras()"></ion-icon>
+    <ion-title>Listado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of items; let i = index" (click)="abrirToast()">
+    <ion-card-header>
+      <ion-card-title> Foto {{i+1}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="https://www.movilzona.es/app/uploads/2019/05/Foto-de-Perfil-en-WhatsApp.jpg?x=810">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
